@@ -1,0 +1,170 @@
+{
+    "快速测试": {
+        "description": "快速测试配置，适合验证功能",
+        "tag": "系统预设",
+        "config": {
+            "training": {
+                "population_size": 10,
+                "generations": 10,
+                "runs_per_individual": 2,
+                "save_file": "dino_population_test.json",
+                "checkpoint_interval": 3,
+                "checkpoint_dir": "checkpoints_test",
+                "max_checkpoints": 10000
+            },
+            "genetic": {
+                "mutation_rate": 0.15,
+                "mutation_scale": 0.3,
+                "tournament_size": 3,
+                "elite_count": 2,
+                "elite_diversity_threshold": 0.1
+            },
+            "game": {
+                "window_width": 800,
+                "window_height": 600,
+                "delay": 0.01,
+                "simulation_mode": false
+            }
+        }
+    },
+    "标准训练": {
+        "description": "标准训练配置，平衡性能和效果",
+        "tag": "系统预设",
+        "config": {
+            "training": {
+                "population_size": 20,
+                "generations": 20,
+                "runs_per_individual": 3,
+                "save_file": "dino_population.json",
+                "checkpoint_interval": 5,
+                "checkpoint_dir": "checkpoints",
+                "max_checkpoints": 10000
+            },
+            "genetic": {
+                "mutation_rate": 0.1,
+                "mutation_scale": 0.2,
+                "tournament_size": 3,
+                "elite_count": 3,
+                "elite_diversity_threshold": 0.1
+            },
+            "game": {
+                "window_width": 800,
+                "window_height": 600,
+                "delay": 0.01,
+                "simulation_mode": false
+            }
+        }
+    },
+    "高强度训练": {
+        "description": "高强度训练配置，追求最佳效果",
+        "tag": "系统预设",
+        "config": {
+            "training": {
+                "population_size": 50,
+                "generations": 100,
+                "runs_per_individual": 5,
+                "save_file": "dino_population_intensive.json",
+                "checkpoint_interval": 10,
+                "checkpoint_dir": "checkpoints_intensive",
+                "max_checkpoints": 10000
+            },
+            "genetic": {
+                "mutation_rate": 0.08,
+                "mutation_scale": 0.15,
+                "tournament_size": 5,
+                "elite_count": 5,
+                "elite_diversity_threshold": 0.15
+            },
+            "game": {
+                "window_width": 800,
+                "window_height": 600,
+                "delay": 0.005,
+                "simulation_mode": false
+            }
+        }
+    },
+    "探索性训练": {
+        "description": "探索性训练配置，高变异率促进多样性",
+        "tag": "系统预设",
+        "config": {
+            "training": {
+                "population_size": 30,
+                "generations": 80,
+                "runs_per_individual": 3,
+                "save_file": "dino_population_explore.json",
+                "checkpoint_interval": 8,
+                "checkpoint_dir": "checkpoints_explore",
+                "max_checkpoints": 10000
+            },
+            "genetic": {
+                "mutation_rate": 0.2,
+                "mutation_scale": 0.4,
+                "tournament_size": 2,
+                "elite_count": 2,
+                "elite_diversity_threshold": 0.2
+            },
+            "game": {
+                "window_width": 800,
+                "window_height": 600,
+                "delay": 0.01,
+                "simulation_mode": false
+            }
+        }
+    },
+    "短期训练": {
+        "description": "适合短期训练，快速迭代",
+        "tag": "自定义预设",
+        "config": {
+            "training": {
+                "population_size": 20,
+                "generations": 3,
+                "runs_per_individual": 3,
+                "save_file": "dino_population.json",
+                "checkpoint_interval": 5,
+                "checkpoint_dir": "checkpoints",
+                "max_checkpoints": 10000
+            },
+            "genetic": {
+                "mutation_rate": 0.1,
+                "mutation_scale": 0.2,
+                "tournament_size": 3,
+                "elite_count": 3,
+                "elite_diversity_threshold": 0.1
+            },
+            "game": {
+                "delay": 0.01,
+                "window_width": 800,
+                "window_height": 600,
+                "simulation_mode": false
+            }
+        }
+    },
+    "长期训练": {
+        "description": "适用于长期训练, 模型更佳",
+        "tag": "自定义预设",
+        "config": {
+            "training": {
+                "population_size": 20,
+                "generations": 50,
+                "runs_per_individual": 3,
+                "save_file": "dino_population.json",
+                "checkpoint_interval": 5,
+                "checkpoint_dir": "checkpoints",
+                "max_checkpoints": 10000
+            },
+            "genetic": {
+                "mutation_rate": 0.1,
+                "mutation_scale": 0.2,
+                "tournament_size": 3,
+                "elite_count": 3,
+                "elite_diversity_threshold": 0.1
+            },
+            "game": {
+                "delay": 0.01,
+                "window_width": 800,
+                "window_height": 600,
+                "simulation_mode": false
+            }
+        }
+    }
+}
