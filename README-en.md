@@ -1,2 +1,2 @@
 # Chrome-Dino-AI
-An AI of chrome dino.
+A Google Dino AI based on genetic algorithm
